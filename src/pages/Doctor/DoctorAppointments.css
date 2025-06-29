@@ -1,0 +1,143 @@
+.appointments-container {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .appointments-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .appointments-table {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Table Header */
+  .table-header {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 3fr 1fr 1fr;
+    gap: 10px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    color: #666;
+  }
+  
+  .hide-mobile {
+    display: block;
+  }
+  
+  /* Table Rows */
+  .table-row {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 3fr 1fr 1fr;
+    gap: 10px;
+    padding: 14px 20px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.25s ease;
+    color: #444;
+  }
+  
+  .table-row:hover {
+    background-color: #f9f9f9;
+    cursor: default;
+  }
+  
+  /* Responsive: hide some columns on small screens */
+  @media (max-width: 640px) {
+    .table-header,
+    .table-row {
+      grid-template-columns: 1fr 3fr 1fr 1fr;
+    }
+  
+    .hide-mobile {
+      display: none;
+    }
+  
+    .actions {
+      grid-column: span 4;
+      display: flex;
+      gap: 12px;
+    }
+  }
+  
+  /* Patient Info */
+  .patient-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .patient-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Payment Badge */
+  .payment-badge {
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 12px;
+    user-select: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .payment-badge.online {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1.5px solid #10b981;
+  }
+  
+  .payment-badge.cash {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1.5px solid #ef4444;
+  }
+  
+  /* Actions */
+  .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  .action-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+  }
+  
+  .action-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Status text */
+  .status {
+    font-weight: 600;
+    font-size: 13px;
+    user-select: none;
+  }
+  
+  .status.cancelled {
+    color: #dc2626;
+  }
+  
+  .status.completed {
+    color: #16a34a;
+  }
+  

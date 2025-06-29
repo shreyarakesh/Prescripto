@@ -1,0 +1,189 @@
+/* Container */
+.add-doctor-form {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+  }
+  
+  /* Title */
+  .form-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #2c3e8f;
+    text-align: center;
+  }
+  
+  /* Main form container flex */
+  .form-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Image upload section */
+  .image-upload-section {
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    color: #777;
+    font-size: 14px;
+    user-select: none;
+  }
+  
+  .image-label {
+    cursor: pointer;
+  }
+  
+  .doctor-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .doctor-image:hover {
+    box-shadow: 0 0 10px #4f46e5aa;
+  }
+  
+  /* Upload text */
+  .upload-text {
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Fields wrappers for left and right column */
+  .fields-wrapper {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Each field group */
+  .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .field-group label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .field-group input,
+  .field-group select,
+  .field-group textarea {
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    outline-offset: 2px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+    color: #222;
+  }
+  
+  .field-group input:focus,
+  .field-group select:focus,
+  .field-group textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 8px #4f46e5aa;
+  }
+  
+  /* Address group extra spacing */
+  .address-group input {
+    margin-top: 4px;
+  }
+  
+  /* About section */
+  .about-section {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .about-section label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .about-section textarea {
+    resize: vertical;
+    padding: 12px 16px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    font-family: inherit;
+    color: #222;
+    outline-offset: 2px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-section textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 8px #4f46e5aa;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    margin-top: 28px;
+    background-color: #4f46e5;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 18px #4f46e5aa;
+  }
+  
+  .submit-btn:hover {
+    background-color: #3a36d9;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .form-container {
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .fields-wrapper {
+      flex: 1 1 100%;
+    }
+  
+    .image-upload-section {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  
+    .doctor-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

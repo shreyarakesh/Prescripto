@@ -1,0 +1,188 @@
+/* Container */
+.profile-container {
+    max-width: 900px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  /* Image */
+  .profile-image {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 24px;
+  }
+  
+  /* Info Card */
+  .info-card {
+    background: white;
+    padding: 28px 32px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  }
+  
+  /* Name */
+  .doc-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Degree & Speciality */
+  .doc-speciality {
+    color: #555;
+    margin-top: 8px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* Experience badge */
+  .experience-badge {
+    background-color: #c3dafe;
+    color: #1e40af;
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    user-select: none;
+  }
+  
+  /* Section titles */
+  .section-title {
+    font-weight: 600;
+    color: #262626;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  /* About text */
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    white-space: pre-line;
+  }
+  
+  /* Editable textarea */
+  .about-textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #cbd5e1;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+    color: #333;
+  }
+  
+  .about-textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.5);
+  }
+  
+  /* Fees & Address */
+  .info-row {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .info-row span {
+    font-weight: 400;
+    color: #222;
+    margin-left: 6px;
+  }
+  
+  .info-input {
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1.8px solid #cbd5e1;
+    width: 120px;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+  }
+  
+  .info-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.6);
+  }
+  
+  .address-text {
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #555;
+    margin-left: 8px;
+    line-height: 1.3;
+  }
+  
+  /* Checkbox section */
+  .checkbox-row {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .checkbox-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #2563eb;
+  }
+  
+  /* Buttons */
+  .action-btn {
+    margin-top: 30px;
+    padding: 10px 26px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    border: 2px solid #2563eb;
+    background-color: transparent;
+    color: #2563eb;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+  }
+  
+  .action-btn:hover {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 640px) {
+    .profile-image {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    .info-card {
+      padding: 20px;
+    }
+    .info-input {
+      width: 100%;
+    }
+  }
+  

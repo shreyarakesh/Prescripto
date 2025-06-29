@@ -1,0 +1,115 @@
+.top-doctors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 4rem 0;
+    color: #262626;
+    padding: 0 1rem;
+  }
+  
+  .top-doctors-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .top-doctors-subtitle {
+    max-width: 33%;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #555555;
+    margin-bottom: 1rem;
+  }
+  
+  .top-doctors-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem 1.25rem;
+    padding: 1.25rem 0;
+  }
+  
+  .doctor-card {
+    border: 1px solid #c9d8ff;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    background: white;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .doctor-image {
+    background-color: #eaefff;
+    width: 100%;
+    object-fit: cover;
+    height: 160px;
+    display: block;
+  }
+  
+  .doctor-info {
+    padding: 1rem;
+  }
+  
+  .availability {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  
+  .available {
+    color: #22c55e; /* Tailwind's green-500 */
+  }
+  
+  .not-available {
+    color: #6b7280; /* Tailwind's gray-500 */
+  }
+  
+  .status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    display: inline-block;
+  }
+  
+  .available-dot {
+    background-color: #22c55e;
+  }
+  
+  .not-available-dot {
+    background-color: #6b7280;
+  }
+  
+  .doctor-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #262626;
+    margin: 0.5rem 0 0.25rem;
+  }
+  
+  .doctor-speciality {
+    font-size: 0.875rem;
+    color: #5c5c5c;
+  }
+  
+  .more-button {
+    background-color: #eaefff;
+    color: #666666;
+    padding: 0.75rem 3rem;
+    border-radius: 9999px;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .more-button:hover {
+    background-color: #c9d8ff;
+  }
+  

@@ -1,0 +1,117 @@
+/* Container */
+form {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9fb;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5e5e5e;
+  }
+  
+  /* Card */
+  .login-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 32px 28px;
+    min-width: 340px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Title */
+  .login-card > p.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 4px;
+  }
+  
+  /* Subtitle */
+  .login-card > p.subtitle {
+    font-size: 1rem;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+  }
+  
+  /* Label */
+  .login-card label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+  }
+  
+  /* Input */
+  .login-card input[type="text"],
+  .login-card input[type="email"],
+  .login-card input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    outline-offset: 2px;
+  }
+  
+  .login-card input[type="text"]:focus,
+  .login-card input[type="email"]:focus,
+  .login-card input[type="password"]:focus {
+    border-color: #3f51b5;
+    box-shadow: 0 0 6px rgba(63,81,181,0.3);
+  }
+  
+  /* Button */
+  .login-card button {
+    background-color: #3f51b5;
+    color: white;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-card button:hover {
+    background-color: #2c3e9f;
+  }
+  
+  /* Toggle text */
+  .login-card p.toggle-text {
+    font-size: 0.9rem;
+    color: #5e5e5e;
+    text-align: center;
+    margin-top: 12px;
+  }
+  
+  .login-card p.toggle-text span {
+    color: #3f51b5;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none;
+  }
+  
+  .login-card p.toggle-text span:hover {
+    color: #2c3e9f;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 24px 16px;
+      min-width: 280px;
+    }
+    form {
+      padding: 12px;
+    }
+  }
+  

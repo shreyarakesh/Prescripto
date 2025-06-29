@@ -1,0 +1,212 @@
+/* Container */
+.doctors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a4a4a;
+  }
+  
+  /* Title */
+  .doctors-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  /* Subtitle */
+  .doctors-subtitle {
+    max-width: 600px;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Filter toggle button (small screens) */
+  .filter-toggle {
+    display: none;
+    margin-bottom: 20px;
+    padding: 10px 24px;
+    border: 1.5px solid #888;
+    border-radius: 6px;
+    background-color: white;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  
+  .filter-toggle:hover {
+    background-color: #f0f4ff;
+    border-color: #3f51b5;
+    color: #3f51b5;
+  }
+  
+  .filter-toggle.active {
+    background-color: #3f51b5;
+    color: white;
+    border-color: #3f51b5;
+  }
+  
+  /* Show filter toggle button only on small screens */
+  @media (max-width: 640px) {
+    .filter-toggle {
+      display: block;
+    }
+  }
+  
+  /* Main content container */
+  .doctors-content {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  /* Filters */
+  .filters {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Hide filters on small screens unless toggled */
+  @media (max-width: 640px) {
+    .filters {
+      display: none;
+    }
+    .filters.show {
+      display: flex;
+    }
+  }
+  
+  /* Individual filter item */
+  .filter-item {
+    padding: 10px 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: white;
+    user-select: none;
+    font-weight: 500;
+  }
+  
+  .filter-item:hover {
+    background-color: #f0f4ff;
+    border-color: #3f51b5;
+    color: #3f51b5;
+  }
+  
+  .filter-item.active {
+    background-color: #e2e5ff;
+    border-color: #3f51b5;
+    color: #3f51b5;
+    box-shadow: 0 2px 8px rgb(63 81 181 / 0.3);
+  }
+  
+  /* Doctor cards grid */
+  .doctor-cards {
+    flex: 3 1 700px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 24px;
+  }
+  
+  /* Message when no doctors found */
+  .no-doctors {
+    grid-column: 1/-1;
+    text-align: center;
+    color: #999;
+    font-size: 1rem;
+    padding: 40px 0;
+  }
+  
+  /* Individual doctor card */
+  .doctor-card {
+    border: 1.5px solid #c9d8ff;
+    border-radius: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  
+  /* Doctor image */
+  .doctor-image {
+    width: 100%;
+    height: 192px; /* fixed height */
+    object-fit: cover;
+    background-color: #eaefff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  
+  /* Doctor info container */
+  .doctor-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  /* Availability container */
+  .availability {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  /* Availability colors */
+  .availability.available {
+    color: #2e7d32; /* green */
+  }
+  
+  .availability.unavailable {
+    color: #999999;
+  }
+  
+  /* Availability indicator circle */
+  .availability-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .availability.available .availability-indicator {
+    background-color: #2e7d32;
+  }
+  
+  .availability.unavailable .availability-indicator {
+    background-color: #999999;
+  }
+  
+  /* Doctor name */
+  .doctor-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #262626;
+    text-align: center;
+  }
+  
+  /* Doctor speciality */
+  .doctor-speciality {
+    font-size: 0.875rem;
+    color: #5c5c5c;
+    text-align: center;
+  }
+  

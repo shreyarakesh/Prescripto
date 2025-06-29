@@ -1,0 +1,188 @@
+.profile-container {
+    max-width: 480px;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a4a4a;
+    padding: 1rem;
+  }
+  
+  .profile-image-section {
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-image {
+    width: 144px;
+    height: 144px;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: #eaefff;
+  }
+  
+  .profile-image.edit {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .image-upload-label {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .upload-icon {
+    position: absolute;
+    width: 40px;
+    bottom: 16px;
+    right: 16px;
+    opacity: 0.7;
+  }
+  
+  .profile-name-section {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .user-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #262626;
+    margin: 0;
+  }
+  
+  .input-name {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 6px 8px;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 8px;
+    outline-offset: 2px;
+  }
+  
+  .input-name:focus {
+    border-color: #3f51b5;
+    outline: none;
+  }
+  
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: #adadad;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info,
+  .basic-info {
+    margin-bottom: 2rem;
+  }
+  
+  .info-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #363636;
+  }
+  
+  .info-text {
+    color: #363636;
+  }
+  
+  .email {
+    color: #1e88e5;
+  }
+  
+  .address-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  
+  .address-inputs input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1.5px solid #d0d0d0;
+    outline-offset: 2px;
+    font-size: 0.9rem;
+  }
+  
+  .address-inputs input:focus {
+    border-color: #3f51b5;
+    outline: none;
+  }
+  
+  .address-text {
+    color: #6b6b6b;
+    line-height: 1.3;
+  }
+  
+  .input-text {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1.5px solid #d0d0d0;
+    outline-offset: 2px;
+    font-size: 0.9rem;
+  }
+  
+  .input-text:focus {
+    border-color: #3f51b5;
+    outline: none;
+  }
+  
+  .input-select {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1.5px solid #d0d0d0;
+    outline-offset: 2px;
+    font-size: 0.9rem;
+  }
+  
+  .input-select:focus {
+    border-color: #3f51b5;
+    outline: none;
+  }
+  
+  .action-button-container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 32px;
+    border-radius: 9999px;
+    border: 2px solid #3f51b5;
+    background-color: transparent;
+    color: #3f51b5;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 6px #3f51b5;
+  }
+  

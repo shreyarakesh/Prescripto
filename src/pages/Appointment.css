@@ -1,0 +1,201 @@
+.appointment-wrapper {
+    max-width: 900px;
+    margin: 2rem auto 5rem;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #262626;
+  }
+  
+  /* Doctor Details */
+  .doctor-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .doctor-image {
+    background-color: #2563eb; /* primary blue */
+    width: 100%;
+    max-width: 280px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .doctor-info-card {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #adadad;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+    margin-top: -80px;
+  }
+  
+  .doctor-name {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .verified-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .doctor-degree-exp {
+    margin-top: 0.5rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .experience-badge {
+    padding: 0.15rem 0.6rem;
+    font-size: 0.75rem;
+    border: 1px solid #999;
+    border-radius: 9999px;
+    background: #f9fafb;
+    cursor: default;
+  }
+  
+  .doctor-about {
+    margin-top: 1.5rem;
+  }
+  
+  .about-title {
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #262626;
+  }
+  
+  .info-icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .about-text {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #4b5563;
+    max-width: 700px;
+  }
+  
+  .appointment-fee {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    color: #4b5563;
+  }
+  
+  .appointment-fee span {
+    color: #111827;
+  }
+  
+  /* Booking Slots */
+  .booking-slots {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    font-weight: 600;
+    color: #565656;
+  }
+  
+  .slots-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Days container - horizontal scroll */
+  .days-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .day-box {
+    flex: 0 0 60px;
+    text-align: center;
+    padding: 1rem 0.25rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #8b8b8b;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  
+  .day-box p {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .day-box.active {
+    background-color: #2563eb; /* primary */
+    color: white;
+    border-color: #2563eb;
+  }
+  
+  /* Times container - horizontal scroll */
+  .times-container {
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .time-slot {
+    flex: 0 0 auto;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: 1px solid #b4b4b4;
+    font-weight: 400;
+    color: #949494;
+    user-select: none;
+    transition: all 0.3s ease;
+    text-transform: lowercase;
+  }
+  
+  .time-slot.selected {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+  }
+  
+  .time-slot:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+  }
+  
+  /* Book Button */
+  .book-btn {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.75rem 0;
+    border-radius: 9999px;
+    margin: 0 auto 2rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    background-color: #1e40af;
+  }
+  

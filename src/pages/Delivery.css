@@ -1,0 +1,49 @@
+.delivery-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #374151; /* gray-700 */
+  }
+  
+  .delivery-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #2563EB; /* blue-600 */
+  }
+  
+  .delivery-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #4B5563; /* gray-600 */
+  }
+  
+  .delivery-section {
+    margin-bottom: 2rem;
+  }
+  
+  .delivery-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #1E40AF; /* blue-800 */
+  }
+  
+  .delivery-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #4B5563;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .delivery-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4B5563;
+  }
+  

@@ -1,0 +1,179 @@
+.myappointments-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: Arial, sans-serif;
+    color: #4a4a4a;
+  }
+  
+  .myappointments-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .no-appointments {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #888;
+    margin-top: 2rem;
+  }
+  
+  .appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .appointment-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #c9d8ff;
+    border-radius: 12px;
+    background-color: white;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .doctor-image-wrapper {
+    flex-shrink: 0;
+  }
+  
+  .doctor-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: #eaefff;
+  }
+  
+  .appointment-details {
+    flex: 1 1 300px;
+    min-width: 200px;
+    font-size: 0.9rem;
+  }
+  
+  .doctor-name {
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+  }
+  
+  .doctor-speciality {
+    color: #5c5c5c;
+    margin-bottom: 0.75rem;
+  }
+  
+  .address-label {
+    font-weight: 600;
+    color: #464646;
+    margin-top: 0.5rem;
+  }
+  
+  .date-time {
+    margin-top: 1rem;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #3c3c3c;
+  }
+  
+  .appointment-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    min-width: 160px;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #999;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #f8f8f8;
+    color: #555;
+  }
+  
+  .btn:hover:not(:disabled) {
+    background-color: #3f51b5;
+    color: white;
+    border-color: #3f51b5;
+  }
+  
+  .btn:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+  
+  .btn-paid {
+    background-color: #eaefff;
+    border-color: #a0aaff;
+    color: #555;
+  }
+  
+  .btn-completed {
+    background-color: #d0f0d6;
+    border-color: #4caf50;
+    color: #2e7d32;
+  }
+  
+  .btn-cancel {
+    background-color: #f8f8f8;
+    border-color: #999;
+    color: #555;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #f44336;
+    border-color: #f44336;
+    color: white;
+  }
+  
+  .btn-cancelled {
+    background-color: #ffe6e6;
+    border-color: #f44336;
+    color: #f44336;
+  }
+  
+  .btn-show-upi {
+    background-color: #fff5e6;
+    border-color: #ffa726;
+    color: #bf6d00;
+  }
+  
+  .btn-show-upi:hover {
+    background-color: #ffa726;
+    color: white;
+    border-color: #bf6d00;
+  }
+  
+  .upi-section {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #856404;
+  }
+  
+  .btn-close-upi {
+    margin-top: 0.5rem;
+    background-color: #ffeeba;
+    border: 1px solid #ffc107;
+    color: #856404;
+  }
+  
+  .btn-close-upi:hover {
+    background-color: #ffc107;
+    color: white;
+    border-color: #856404;
+  }
+  
